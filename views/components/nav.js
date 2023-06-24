@@ -156,7 +156,7 @@ const closeBtnDesktop = navbar.children[0].children[1];
 closeBtnDesktop.addEventListener('click', async e => {
   if (e.target.classList.contains('rounded-lg')) {
     try {
-      await axios.get('http://localhost:3004/api/logout', {
+      await axios.get('/api/logout', {
         withCredentials: true
       });
       window.location.pathname = '/login';
@@ -172,7 +172,7 @@ const closeBtnMobile = navbar.children[0].children[2].children[0].children[0];
 closeBtnMobile.addEventListener('click', async e => {
 
 try {
-  await axios.get('http://localhost:3004/api/logout', {
+  await axios.get('/api/logout', {
         withCredentials: true
       });
   window.location.pathname = '/login';
