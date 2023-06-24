@@ -29,6 +29,7 @@ app.use(cookieParser());
 //Rutas Frontend
 
 app.use('/', express.static(path.resolve('views', 'home')));
+app.use('/styles', express.static(path.resolve('views', 'styles')));
 app.use('/login', express.static(path.resolve('views', 'login')));
 app.use('/signup', express.static(path.resolve('views', 'signup')));
 app.use('/contact', express.static(path.resolve('views', 'contact')));
